@@ -1,0 +1,11 @@
+<h4 class="text-center">Employee Add</h4>
+
+<form #empForm="ngForm" (submit)="submitMyForm(empForm.value)">
+    <p>Id: <input name="id" ngModel [(ngModel)]='empObj.id' /></p>
+    <p>First Name: <input name="firstName" ngModel [(ngModel)]='empObj.firstName'></p>
+    <p>Last Name: <input name="lastName" ngModel [(ngModel)]='empObj.lastName'></p>
+    <p>salary: <input name="sal" ngModel [(ngModel)]='empObj.sal'></p>
+    <p>email: <input name="email" ngModel [(ngModel)]='empObj.email'></p>
+
+    <button type="submit">Submit</button>
+</form>
