@@ -8,6 +8,7 @@ import { provideEffects } from '@ngrx/effects';
 import { employeesReducer } from './state_management/reducers/employee.reducer';
 import { EmployeeEffects } from './state_management/effects/employee.effects';
 import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideStore({ count: counterReducer, employees: employeesReducer }),
-    provideEffects(EmployeeEffects)
+    provideEffects(EmployeeEffects), provideAnimationsAsync()
   ]
 };

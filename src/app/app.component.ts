@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { CounterComponent } from './components/counter/counter.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeAddComponent } from './components/employee-add/employee-add.component';
+import { MaterialDemoComponent } from './components/material-demo/material-demo.component';
+import { ChartDemoComponent } from './components/chart-demo/chart-demo.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { EmployeeAddComponent } from './components/employee-add/employee-add.com
     RouterOutlet,
     CounterComponent,
     EmployeeListComponent,
-    EmployeeAddComponent
+    EmployeeAddComponent,
+    MaterialDemoComponent,
+    ChartDemoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
